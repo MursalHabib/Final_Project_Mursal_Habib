@@ -1,12 +1,19 @@
 console.info("script loaded");
 
 const removeTodo = (id) => {
-	const todos = window.localStorage.getItem("todos");
+	console.log("removetodo", id);
+	const updated = [];
+	const todos = window.localStorage.getItem("todos") || [];
 	JSON.parse(todos)
 		.filter((e) => {
-			e.id !== id;
+			console.log("isi filter", e);
+			return e.id !== id;
 		})
-		.map((e) => e);
+		.map((e) => updated.push(e));
+
+	console.log("updated", updated);
+	window.localStorage.setItem("todos", JSON.stringify(updated));
+	displayTodo();
 };
 
 const displayTodo = () => {
@@ -21,9 +28,11 @@ const displayTodo = () => {
 				<div class="card-body p-1">
 					<div class="d-flex align-items-center justify-content-start">
 					<div class="input-group-text bg-transparent border-0">
-    <input class="form-check-input mt-0" type="checkbox" value="">
-  </div>
-						<div class="">
+                <input class="form-check-input mt-0" type="checkbox" value="" onclick="checkTodo(${
+					e.id
+				})" ${e.isCompleted === true ? `checked` : ``}>
+            </div>
+						<div class="${e.isCompleted === true ? `text-decoration-line-through` : ``}">
 							${e.todo}
 						</div>
 						<div class="text-center ms-auto">
@@ -56,7 +65,7 @@ const displayTodo = () => {
 };
 const submitTodo = () => {
 	console.log("begin submit");
-	let todos = JSON.parse(window.localStorage.getItem("todos"));
+	let todos = JSON.parse(window.localStorage.getItem("todos")) || [];
 	console.log(todos);
 	const newTodo = document.getElementById("newTodo").value;
 	if (newTodo) {
@@ -64,7 +73,6 @@ const submitTodo = () => {
 			id: new Date().getTime(),
 			todo: newTodo,
 			isCompleted: false,
-			isDeleted: false,
 		};
 
 		todos.push(inputTodo);
@@ -75,4 +83,17 @@ const submitTodo = () => {
 
 displayTodo();
 
-const checkTodo = () => {};
+const checkTodo = (id) => {
+	console.log("checktodo", id);
+
+	const storedTodos = JSON.parse(localStorage.getItem("todos"));
+
+	const todoToUpdate = storedTodos.find((todo) => todo.id === id);
+
+	if (todoToUpdate) {
+		todoToUpdate.isCompleted = !todoToUpdate.isCompleted;
+	}
+
+	localStorage.setItem("todos", JSON.stringify(storedTodos));
+	displayTodo();
+};

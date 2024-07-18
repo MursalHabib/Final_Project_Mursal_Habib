@@ -15,10 +15,14 @@
 			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
 			crossorigin="anonymous"
 		></script>
+		<script src="./js/navbar.js" defer></script>
+
+		<script src="./js/footer.js" defer></script>
 	</head>
 	<body>
-		<div class="container mt-5">
-			<div class="card bg-light border-0 shadow">
+		<div id="navbar-placeholder"></div>
+		<div class="container my-5" style="height: 60vh">
+			<div class="card bg-light border-0 mb-4">
 				<div class="card-body text-center">
 					<a class="display-5" href="#">My Todos</a>
 					<div class="input-group my-3">
@@ -42,10 +46,10 @@
 				</div>
 			</div>
 			<i data-feather="thumbs-up"></i>
-			<hr />
 
 			<div id="listTodos"></div>
 		</div>
+		<div id="footer-placeholder"></div>
 	</body>
 	<script src="./js/script.js"></script>
 </html>

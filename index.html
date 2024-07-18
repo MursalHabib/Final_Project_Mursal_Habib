@@ -29,6 +29,15 @@
 		<link rel="stylesheet" href="./css/style.css" />
 		<script src="./js/navbar.js" defer></script>
 		<script src="./js/footer.js" defer></script>
+		<style>
+			#card-hover {
+				transition: 0.3s ease-in-out;
+			}
+			#card-hover:hover {
+				rotate: 3deg;
+				/* box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); */
+			}
+		</style>
 	</head>
 	<body class="container-fluid">
 		<div id="navbar-placeholder"></div>
@@ -435,7 +444,11 @@
 				<!-- Gallery -->
 				<div class="row mt-3">
 					<div class="col-lg-3 col-md-12">
-						<div class="position-relative">
+						<div
+							class="position-relative"
+							id="card-hover"
+							id="card-hover"
+						>
 							<img
 								src="https://cdn.pixabay.com/photo/2015/05/31/10/55/man-791049_1280.jpg"
 								class="w-100 shadow-1-strong rounded mb-4"
@@ -448,7 +461,7 @@
 								Inspiration Blog 1
 							</a>
 						</div>
-						<div class="position-relative">
+						<div class="position-relative" id="card-hover">
 							<img
 								src="https://cdn.pixabay.com/photo/2024/01/04/15/42/sailing-8487722_1280.png"
 								class="w-100 shadow-1-strong rounded mb-4"
@@ -464,7 +477,7 @@
 					</div>
 
 					<div class="col-lg-3 mb-4 mb-lg-0">
-						<div class="position-relative">
+						<div class="position-relative" id="card-hover">
 							<img
 								src="https://cdn.pixabay.com/photo/2023/05/01/14/49/monstera-7963251_1280.jpg"
 								class="w-100 shadow-1-strong rounded mb-4"
@@ -477,7 +490,7 @@
 								Inspiration Blog 3
 							</a>
 						</div>
-						<div class="position-relative">
+						<div class="position-relative" id="card-hover">
 							<img
 								src="https://cdn.pixabay.com/photo/2018/05/18/15/30/web-design-3411373_1280.jpg"
 								class="w-100 shadow-1-strong rounded mb-4"
@@ -493,7 +506,7 @@
 					</div>
 
 					<div class="col-lg-3 mb-4 mb-lg-0">
-						<div class="position-relative">
+						<div class="position-relative" id="card-hover">
 							<img
 								src="https://cdn.pixabay.com/photo/2015/06/24/15/45/code-820275_1280.jpg"
 								class="w-100 shadow-1-strong rounded mb-4"
@@ -506,7 +519,7 @@
 								Inspiration Blog 5
 							</a>
 						</div>
-						<div class="position-relative">
+						<div class="position-relative" id="card-hover">
 							<img
 								src="https://cdn.pixabay.com/photo/2019/11/05/00/25/cafe-bar-4602458_1280.jpg"
 								class="w-100 shadow-1-strong rounded mb-4"
@@ -522,7 +535,7 @@
 					</div>
 
 					<div class="col-lg-3 mb-4 mb-lg-0">
-						<div class="position-relative">
+						<div class="position-relative" id="card-hover">
 							<img
 								src="https://cdn.pixabay.com/photo/2023/06/14/04/45/mountain-8062284_1280.png"
 								class="w-100 shadow-1-strong rounded mb-4"
@@ -535,7 +548,7 @@
 								Inspiration Blog 7
 							</a>
 						</div>
-						<div class="position-relative">
+						<div class="position-relative" id="card-hover">
 							<img
 								src="https://cdn.pixabay.com/photo/2016/08/27/12/06/website-1624028_1280.png"
 								class="w-100 shadow-1-strong rounded mb-4"
