@@ -13,22 +13,23 @@ document.addEventListener("DOMContentLoaded", function () {
 function highlightActiveNavItem() {
 	const path = window.location.pathname;
 	const page = path.split("/").pop();
+	console.log(page);
 
 	let activeLinkId = "";
 	switch (page) {
 		case "index.html" || "index":
 			activeLinkId = "home-link";
 			break;
-		case "portfolio.html" || "index":
+		case "portfolio.html" || "portfolio":
 			activeLinkId = "portfolio-link";
 			break;
-		case "blog.html" || "index":
+		case "blog.html" || "blog":
 			activeLinkId = "blog-link";
 			break;
-		case "about.html" || "index":
+		case "about.html" || "about":
 			activeLinkId = "about-link";
 			break;
-		case "contact.html" || "index":
+		case "contact.html" || "contact":
 			activeLinkId = "contact-link";
 			break;
 		default:
