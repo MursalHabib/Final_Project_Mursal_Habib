@@ -17,19 +17,24 @@ function highlightActiveNavItem() {
 
 	let activeLinkId = "";
 	switch (page) {
-		case "index.html" || "index":
+		case "index.html":
+		case "index":
 			activeLinkId = "home-link";
 			break;
-		case "portfolio.html" || "portfolio":
+		case "portfolio.html":
+		case "portfolio":
 			activeLinkId = "portfolio-link";
 			break;
-		case "blog.html" || "blog":
+		case "blog.html":
+		case "blog":
 			activeLinkId = "blog-link";
 			break;
-		case "about.html" || "about":
+		case "about.html":
+		case "about":
 			activeLinkId = "about-link";
 			break;
-		case "contact.html" || "contact":
+		case "contact.html":
+		case "contact":
 			activeLinkId = "contact-link";
 			break;
 		default:
