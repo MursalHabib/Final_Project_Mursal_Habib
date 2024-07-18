@@ -27,8 +27,17 @@
 		></script>
 		<link rel="stylesheet" href="./css/style.css" />
 		<script src="./js/navbar.js" defer></script>
-		<script src="./js/portfolio.js"></script>
+
 		<script src="./js/footer.js" defer></script>
+		<style>
+			#card-hover {
+				transition: transform 0.3s, box-shadow 0.3s;
+			}
+			#card-hover:hover {
+				transform: translateY(-10px);
+				box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+			}
+		</style>
 	</head>
 	<body>
 		<div id="navbar-placeholder"></div>
@@ -36,19 +45,38 @@
 			<div class="header text-center mb-3">
 				<h3>Rate Our Portfolio</h3>
 				<button
-					class="btn btn-sm btn-light rounded-pill px-3 py-0 active"
+					onclick="showAll()"
+					class="btn btn-sm btn-light rounded-pill px-3 py-0"
+					id="all"
 				>
 					All
 				</button>
-				<button class="btn btn-sm btn-light rounded-pill px-3 py-0">
+				<button
+					class="btn btn-sm btn-light rounded-pill px-3 py-0"
+					onclick="showDesign()"
+					value="design"
+					id="design"
+				>
 					Design
 				</button>
-				<button class="btn btn-sm btn-light rounded-pill px-3 py-0">
+				<button
+					class="btn btn-sm btn-light rounded-pill px-3 py-0"
+					id="website"
+					onclick="showWebsite()"
+				>
 					Website
+				</button>
+				<button
+					class="btn btn-sm btn-light rounded-pill px-3 py-0"
+					id="logo"
+					onclick="showLogo()"
+				>
+					Logo
 				</button>
 			</div>
 			<div id="list-of-portfolios" class="container-fluid"></div>
 		</div>
 		<div id="footer-placeholder"></div>
 	</body>
+	<script src="./js/portfolio.js"></script>
 </html>
