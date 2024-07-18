@@ -18,7 +18,7 @@ function highlightActiveNavItem() {
 	let activeLinkId = "";
 	switch (page) {
 		case "index.html":
-		case "index":
+		case "":
 			activeLinkId = "home-link";
 			break;
 		case "portfolio.html":
