@@ -1,0 +1,74 @@
+[
+	{
+		"title": "Portfolio 1",
+		"createdBy": "lorem ipsum",
+		"url": "./images/portfolio-1.png",
+		"createdAt": "Thu Jul 18 2024 13:25:48 GMT+0700 (Western Indonesia Time)",
+		"category": "design",
+		"like": 12
+	},
+	{
+		"title": "Portfolio 2",
+		"createdBy": "lorem ipsum",
+		"url": "./images/portfolio-2.png",
+		"createdAt": "Thu Jul 18 2024 13:25:48 GMT+0700 (Western Indonesia Time)",
+		"category": "website",
+		"like": 30
+	},
+	{
+		"title": "Portfolio 3",
+		"createdBy": "lorem ipsum",
+		"url": "./images/portfolio-3.png",
+		"createdAt": "Thu Jul 18 2024 13:25:48 GMT+0700 (Western Indonesia Time)",
+		"category": "design",
+		"like": 30
+	},
+	{
+		"title": "Portfolio 4",
+		"createdBy": "lorem ipsum",
+		"url": "./images/portfolio-4.png",
+		"createdAt": "Thu Jul 18 2024 13:25:48 GMT+0700 (Western Indonesia Time)",
+		"category": "website",
+		"like": 12
+	},
+	{
+		"title": "Portfolio 5",
+		"createdBy": "lorem ipsum",
+		"url": "./images/portfolio-5.png",
+		"createdAt": "Thu Jul 18 2024 13:25:48 GMT+0700 (Western Indonesia Time)",
+		"category": "website",
+		"like": 30
+	},
+	{
+		"title": "Portfolio 6",
+		"createdBy": "lorem ipsum",
+		"url": "./images/portfolio-6.png",
+		"createdAt": "Thu Jul 18 2024 13:25:48 GMT+0700 (Western Indonesia Time)",
+		"category": "design",
+		"like": 30
+	},
+	{
+		"title": "Portfolio 7",
+		"createdBy": "lorem ipsum",
+		"url": "./images/portfolio-7.png",
+		"createdAt": "Thu Jul 18 2024 13:25:48 GMT+0700 (Western Indonesia Time)",
+		"category": "website",
+		"like": 12
+	},
+	{
+		"title": "Portfolio 8",
+		"createdBy": "lorem ipsum",
+		"url": "./images/portfolio-8.png",
+		"createdAt": "Thu Jul 18 2024 13:25:48 GMT+0700 (Western Indonesia Time)",
+		"category": "design",
+		"like": 30
+	},
+	{
+		"title": "Portfolio 9",
+		"createdBy": "lorem ipsum",
+		"url": "./images/portfolio-9.png",
+		"createdAt": "Thu Jul 18 2024 13:25:48 GMT+0700 (Western Indonesia Time)",
+		"category": "logo",
+		"like": 30
+	}
+]
