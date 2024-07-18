@@ -13,23 +13,22 @@ document.addEventListener("DOMContentLoaded", function () {
 function highlightActiveNavItem() {
 	const path = window.location.pathname;
 	const page = path.split("/").pop();
-	console.log(page);
 
 	let activeLinkId = "";
 	switch (page) {
-		case "index.html":
+		case "index.html" || "index":
 			activeLinkId = "home-link";
 			break;
-		case "portfolio.html":
+		case "portfolio.html" || "index":
 			activeLinkId = "portfolio-link";
 			break;
-		case "blog.html":
+		case "blog.html" || "index":
 			activeLinkId = "blog-link";
 			break;
-		case "about.html":
+		case "about.html" || "index":
 			activeLinkId = "about-link";
 			break;
-		case "contact.html":
+		case "contact.html" || "index":
 			activeLinkId = "contact-link";
 			break;
 		default:
@@ -37,9 +36,6 @@ function highlightActiveNavItem() {
 	}
 
 	if (activeLinkId) {
-		const activeLink = document.getElementById(activeLinkId);
-		if (activeLink) {
-			activeLink.classList.add("active");
-		}
+		document.getElementById(activeLinkId).classList.add("active");
 	}
 }
